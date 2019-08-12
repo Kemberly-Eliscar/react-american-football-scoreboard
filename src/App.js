@@ -34,14 +34,18 @@ const [awayScore, setAwayScore] = useState(0);
           <button 
           onClick={() => setScore(score + 7)}
           className="homeButtons__touchdown">Home Touchdown</button>
-          <button className="homeButtons__fieldGoal">Home Field Goal</button>
+          <button 
+          onClick={() => setScore(score + 3)}
+          className="homeButtons__fieldGoal">Home Field Goal</button>
         </div>
 
         <div className="awayButtons">
           <button 
           onClick={() => setAwayScore(awayScore + 7)}
           className="awayButtons__touchdown">Away Touchdown</button>
-          <button className="awayButtons__fieldGoal">Away Field Goal</button>
+          <button 
+          onClick={() => setAwayScore(awayScore + 3)}
+          className="awayButtons__fieldGoal">Away Field Goal</button>
         </div>
       </section>
     </div>
